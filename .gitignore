@@ -1,0 +1,8 @@
+# Default ignored files
+/.idea/workspace.xml
+out/
+gradle/
+.gradle/
+build/
+.idea/
+src/main/java/Token.java
