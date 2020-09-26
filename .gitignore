@@ -4,5 +4,3 @@ out/
 .gradle/
 build/
 .idea/
-/src/main/java/BotToken.java
-/Dockerfiles/
