@@ -10,7 +10,7 @@ public class TempBot {
     private JDA jda;
     private MessageEventListener eventListener = new MessageEventListener();
     private MessageListenerAdapter listenerAdapter = new MessageListenerAdapter();
-    private final String token = Token.token;
+    private final String token = BotToken.token;
 
     public static void main(String... args) throws LoginException {
         TempBot main = new TempBot();
