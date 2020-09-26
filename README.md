@@ -11,7 +11,9 @@ Temporary Macros for TPH
 - run `docker build . --build-arg argToken=BOT_TOKEN`
 
 **Build img from GitHub**
+
 `cd /Dockerfiles/from-github`
+
 `docker build . --build-arg argToken=BOT_TOKEN`
 
 *note* bot token is accessible via build history, do not deploy image to public domain
