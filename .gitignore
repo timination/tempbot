@@ -5,4 +5,4 @@ out/
 build/
 .idea/
 /src/main/java/BotToken.java
-/Dockerfiles
+/Dockerfiles/
