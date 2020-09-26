@@ -10,13 +10,20 @@ public class TempBot {
     private JDA jda;
     private MessageEventListener eventListener = new MessageEventListener();
     private MessageListenerAdapter listenerAdapter = new MessageListenerAdapter();
-    private final String token = BotToken.token;
+    private String token = null;
 
     public static void main(String... args) throws LoginException {
-        TempBot main = new TempBot();
+        if(args.length < 1) {
+            System.out.println("Missing bot token");
+            System.exit(0);
+        } else {
+            TempBot main = new TempBot(args[0]);
+        }
+
     }
 
-    public TempBot() throws LoginException {
+    public TempBot(String token) throws LoginException {
+       this.token = token;
         JDABuilder builder = new JDABuilder(AccountType.BOT)
                 .addEventListeners(eventListener)
                 .addEventListeners(listenerAdapter);
